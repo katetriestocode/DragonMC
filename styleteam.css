@@ -1,5 +1,5 @@
 body {
-    background-image: url('https://github.com/katetriestocode/DragonMC/blob/main/2026-05-10_12.00.45.png?raw=true'), linear-gradient(rgba(0, 0, 0, 0.283), rgba(0, 0, 0, 0.5));
+    background-image: url('https://github.com/katetriestocode/DragonMC/blob/main/assets/2026-05-10_12.00.45.png?raw=true'), linear-gradient(rgba(0, 0, 0, 0.283), rgba(0, 0, 0, 0.5));
     background-blend-mode: overlay;
     background-size: cover;
     position: relative; 
@@ -141,6 +141,10 @@ p {
         grid-template-columns: 1fr;
     }
 }
+
+
+
+
 
 
 
