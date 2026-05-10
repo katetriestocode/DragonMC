@@ -1,23 +1,48 @@
 body {
-    background-image: url("https://github.com/katetriestocode/personalwebsite/blob/main/assets/JA%20Jayagiri%20Sans.png?raw=true");
-    background-size: 40vw;
-    background-repeat: repeat;
-    text-align: center;
-    font-family: Hooey;
-    color: white;
+    background-image: url('https://github.com/katetriestocode/DragonMC/blob/main/2026-05-10_12.00.45.png?raw=true'), linear-gradient(rgba(0, 0, 0, 0.283), rgba(0, 0, 0, 0.5));
+    background-blend-mode: overlay;
+    background-size: cover;
     position: relative; 
     min-height: 100vh;
     padding-top: 0vw; 
     background-attachment: fixed; 
+    font-family:Arial, Helvetica, sans-serif;
     margin: 0;
-    overflow-x: hidden;
 }
 
+
+
+/* ALL TEXT */
+h1 {
+
+}
+h2 { /* large titles without custom text */
+    font-family: Arial, Helvetica, sans-serif;
+    color: azure;
+    font-size: medium;
+}
+h3 { /* various all caps text bits*/
+    font-family: Arial, Helvetica, sans-serif;
+    color: azure;
+}
+h4 { /* using this as normal text, to be used as last h being used */
+    font-family: Arial, Helvetica, sans-serif;
+    color: azure;
+    font-size: small;
+}
+p {
+
+}
+
+
+
+/* TOP SECTIONS */
 .top-tab {
     position: relative; 
     top: 0;
     left: 0;
-    background: white;
+    background: rgb(145, 67, 164);
+    opacity: 80%;
     width: 100%;
     z-index: 1000;
     height: 8vw;
@@ -60,8 +85,94 @@ body {
 }
 
 
-.credit {
+
+/* main logo */
+
+.logo {
+    width: 80vw;
+    height: auto;
+    margin: 5vw auto;
+}
+
+.logo-image {
+    width: 100%;
+    height: auto;
+}
+
+
+/* split section */
+
+.split-section {
     display: flex;
-    gap: 20px;
     align-items: center;
+    justify-content: center;
+    gap: 4vw; /* Space between image and text */
+    max-width: 800px; /* Keeps it from getting too wide on big screens */
+    margin: 60px auto; /* Centers the whole block and adds space above/below */
+    padding: 0 20px;
+    text-align: left; /* Overrides the body's center alignment for this section */
+}
+
+.left-section {
+    background-color: #00000088;
+    padding: 1vw 2vw; /* More padding for a larger card */
+    border-radius: 0.4vw; /* Slightly rounded corners */
+    text-align: left;
+    line-height: 1;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    cursor: pointer;
+    box-shadow: 0 0.4vw 1.5vw rgba(0, 0, 0, 0.2);
+    display: wrap;
+    align-items: left;    /* Vertically centers arrows and text */
+    justify-content: left;
+    width: 60vw;
+}
+
+.right-section {
+    max-width: 40vw;
+}
+
+.store-tab {
+    background-color: #00000088;
+    padding: 1vw 2vw; /* More padding for a larger card */
+    border-radius: 0.4vw; /* Slightly rounded corners */
+    text-align: left;
+    line-height: 1;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    cursor: pointer;
+    box-shadow: 0 0.4vw 1.5vw rgba(0, 0, 0, 0.2);
+    display: wrap;
+    align-items: left;    /* Vertically centers arrows and text */
+    justify-content: left;
+    width: 40vw;
+}
+
+
+
+
+
+
+/* KEEP AT THE END! */
+.credit {
+    gap: 20px;
+    position: fixed;
+    bottom: 10px;       /* Distance from the bottom of the page */
+    left: 50%;          /* Moves the left edge to the middle of the screen */
+    transform: translateX(-50%); /* Shifts it back by half its width to center it perfectly */
+    text-align: center;
+    white-space: nowrap; /* Prevents the text from wrapping to a new line */
+    opacity: 80%;
+}
+.credit-nav-icon {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between icon and text */
+}
+.credit-nav-icon img {
+    width: 30px;
+    height: 30px;
+}
+.credit-nav-icon:hover {
+    transform: scale(1.05);
+    color: #ff00ff;
 }
