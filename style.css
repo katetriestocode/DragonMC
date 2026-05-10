@@ -1,0 +1,67 @@
+body {
+    background-image: url("https://github.com/katetriestocode/personalwebsite/blob/main/assets/JA%20Jayagiri%20Sans.png?raw=true");
+    background-size: 40vw;
+    background-repeat: repeat;
+    text-align: center;
+    font-family: Hooey;
+    color: white;
+    position: relative; 
+    min-height: 100vh;
+    padding-top: 0vw; 
+    background-attachment: fixed; 
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.top-tab {
+    position: relative; 
+    top: 0;
+    left: 0;
+    background: white;
+    width: 100%;
+    z-index: 1000;
+    height: 8vw;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%; 
+    padding: 0vw 5vw;
+}
+
+.left-links, .right-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-icon {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between icon and text */
+    font-family: Archivo;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: transform 0.2s;
+}
+
+.nav-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.nav-icon:hover {
+    transform: scale(1.05);
+    color: #ff00ff;
+}
+
+
+.credit {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
