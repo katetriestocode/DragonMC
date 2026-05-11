@@ -18,21 +18,35 @@ h1 {
 }
 h2 { /* large titles without custom text */
     font-family: Arial, Helvetica, sans-serif;
-    color: azure;
+    color: white;
     font-size: xx-large;
 }
-h3 { /* various all caps text bits*/
+h3 {
     font-family: Arial, Helvetica, sans-serif;
-    color: azure;
+    color: white;
+    margin: 0;
+    font-size: 24px;
+    line-height: 1;
 }
-h4 { /* using this as normal text, to be used as last h being used */
+h4 {
     font-family: Arial, Helvetica, sans-serif;
-    color: azure;
-    font-size: large;
-    line-height: 1.5;
+    color: white;
+    margin: 0;
+    font-size: 24px;
+    line-height: 1;
+    margin-top: 1vw;
+}
+h5 { /* various all caps text bits*/
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 24px;
+    margin: 0;
 }
 p {
-
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: large;
+    line-height: 1.5;
 }
 
 
@@ -125,7 +139,6 @@ p {
     max-width: 90vw; /* Keeps it from getting too wide on big screens */
     margin: 60px auto; /* Centers the whole block and adds space above/below */
     padding: 0 2vw;
-    text-align: left; /* Overrides the body's center alignment for this section */
 }
 
 .left-section {
@@ -146,35 +159,27 @@ p {
     width: 30vw;
 }
 
-.store-tab {
+
+.store-tab, .team-tab {
     background-color: #00000088;
-    padding: 1vw 2vw; /* More padding for a larger card */
-    border-radius: 0.4vw; /* Slightly rounded corners */
-    line-height: 1;
+    padding: 1.5vw 1.2vw;    /* Tightened padding */
+    border-radius: 0.4vw;
+    margin-bottom: 1vw;
+    display: flex;
+    align-items: center;
     transition: transform 0.2s ease, background-color 0.2s ease;
     cursor: pointer;
     box-shadow: 0 0.4vw 1.5vw rgba(0, 0, 0, 0.2);
-    display: wrap;
-    align-items: left;    /* Vertically centers arrows and text */
-    justify-content: left;
     text-align: center;
-    margin-bottom: 2vw;
 }
 
-.team-tab {
-    background-color: #00000088;
-    padding: 1vw 2vw; /* More padding for a larger card */
-    border-radius: 0.4vw; /* Slightly rounded corners */
-    line-height: 1;
-    transition: transform 0.2s ease, background-color 0.2s ease;
-    cursor: pointer;
-    box-shadow: 0 0.4vw 1.5vw rgba(0, 0, 0, 0.2);
-    display: wrap;
-    align-items: left;    /* Vertically centers arrows and text */
-    justify-content: left;
-    text-align: center;
-    margin-bottom: 2vw;
+.store-tab a, .team-tab a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
 }
+
 
 .events-tab {
     background-color: #00000088;
@@ -184,10 +189,11 @@ p {
     transition: transform 0.2s ease, background-color 0.2s ease;
     cursor: pointer;
     box-shadow: 0 0.4vw 1.5vw rgba(0, 0, 0, 0.2);
-    display: wrap;
-    align-items: left;    /* Vertically centers arrows and text */
     justify-content: left;
-    text-align: center;
+    flex-direction: column;  /* Stacks items vertically */
+    align-items: flex-start; /* Aligns everything to the left */
+    gap: 1vw;              /* Adds consistent spacing between lines */
+    text-align: left;        /* Ensures text starts from the left edge */
 }
 
 
