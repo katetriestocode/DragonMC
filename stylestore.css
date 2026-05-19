@@ -18,21 +18,35 @@ h1 {
 }
 h2 { /* large titles without custom text */
     font-family: Arial, Helvetica, sans-serif;
-    color: azure;
+    color: white;
     font-size: xx-large;
 }
-h3 { /* various all caps text bits*/
+h3 {
     font-family: Arial, Helvetica, sans-serif;
-    color: azure;
+    color: white;
+    margin: 0;
+    font-size: 24px;
+    line-height: 1;
 }
-h4 { /* using this as normal text, to be used as last h being used */
+h4 {
     font-family: Arial, Helvetica, sans-serif;
-    color: azure;
-    font-size: large;
-    line-height: 1.5;
+    color: white;
+    margin: 0;
+    font-size: 24px;
+    line-height: 1;
+    margin-top: 1vw;
+}
+h5 { /* various all caps text bits*/
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 24px;
+    margin: 0;
 }
 p {
-
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: large;
+    line-height: 1.5;
 }
 
 
@@ -45,7 +59,7 @@ p {
     background: rgba(119, 55, 135, 0.85);
     width: 100%;
     z-index: 1000;
-    padding: 1vw 0;
+    padding: 2vw 0;
     box-shadow: black;
     text-shadow: black;
 }
@@ -87,62 +101,9 @@ p {
 }
 
 
-/* team logo */
-
-.team {
-    width: 80vw;
-    height: auto;
-    margin: 5vw auto;
+.storestatus{
+    text-align: center;
 }
-
-.team-image {
-    width: 100%;
-    height: auto;
-}
-
-
-
-
-/* The container that holds all the cards */
-.team-container {
-    display: grid;
-    /* This creates 3 equal columns */
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 2vw; 
-    max-width: 90vw;
-    margin: 40px auto;
-    padding-bottom: 50px;
-}
-
-/* A single unified style for every team member */
-.team-card {
-    background-color: rgba(0, 0, 0, 0.534); /* Semi-transparent black */
-    padding: 2vw;
-    border-radius: 0.8vw;
-    text-align: center; /* Centers the name and skin */
-    box-shadow: 0 0.4vw 1.5vw rgba(0, 0, 0, 0.4);
-    transition: transform 0.2s ease;
-}
-
-.team-card:hover {
-    transform: scale(1.03);
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
-.skin {
-    width: 100%; /* Makes skin fit inside the card */
-    max-width: 200px; /* Adjust based on how big you want the skins */
-    height: auto;
-    margin-top: 1vw;
-}
-
-/* Responsive: If the screen is too small, switch to 1 column */
-@media (max-width: 768px) {
-    .team-container {
-        grid-template-columns: 1fr;
-    }
-}
-
 
 
 

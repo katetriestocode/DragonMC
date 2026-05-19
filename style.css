@@ -56,11 +56,12 @@ p {
     position: relative; 
     top: 0;
     left: 0;
-    background: rgb(145, 67, 164);
-    opacity: 80%;
+    background: rgba(119, 55, 135, 0.85);
     width: 100%;
     z-index: 1000;
-    height: 8vw;
+    padding: 2vw 0;
+    box-shadow: black;
+    text-shadow: black;
 }
 
 .nav-container {
@@ -80,18 +81,18 @@ p {
 .nav-icon {
     display: flex;
     align-items: center;
-    gap: 8px; /* Space between icon and text */
-    font-family: Archivo;
+    gap: 15px; /* Space between icon and text */
+    font-family: Arial;
     color: black;
     text-decoration: none;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 25px;
     transition: transform 0.2s;
 }
 
 .nav-icon img {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
 }
 
 .nav-icon:hover {
@@ -133,7 +134,7 @@ p {
 
 .split-section {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     gap: 4vw; /* Space between image and text */
     max-width: 90vw; /* Keeps it from getting too wide on big screens */
@@ -200,16 +201,18 @@ p {
 
 
 
-
-
 /* KEEP AT THE END! */
 .credit {
     gap: 20px;
     position: relative;
     bottom: 10px;       /* Distance from the bottom of the page */
-    margin-left: 40vw;
     text-align: center;
     opacity: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Perfectly centers it horizontally */
+    align-items: center;
+    text-decoration: none;
 }
 .credit-nav-icon {
     display: flex;
